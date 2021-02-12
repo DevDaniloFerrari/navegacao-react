@@ -4,7 +4,12 @@ import './Menu.css'
 export default function Menu() {
     return (
         <aside className="Menu">
-            Componente Menu
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/">Sobre</a></li>
+                </ul>
+            </nav>
         </aside>
     )
 }
