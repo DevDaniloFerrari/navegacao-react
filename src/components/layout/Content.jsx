@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import About from '../../views/examples/About'
 import Home from '../../views/examples/Home'
 import Param from '../../views/examples/Param'
+import NotFound from '../../views/examples/NotFound'
 
 export default function Content() {
     return (
@@ -17,6 +18,9 @@ export default function Content() {
                 </Route>
                 <Route exact path="/">
                     <Home></Home>
+                </Route>
+                <Route path="*">
+                    <NotFound></NotFound>
                 </Route>
             </Switch>
         </main>
